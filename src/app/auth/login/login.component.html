@@ -1,0 +1,30 @@
+<form [formGroup]="form" class="form" (ngSubmit)="onSubmit()">
+  <input
+    type="text"
+    placeholder="email"
+    formControlName="email"
+    class="form__input"
+    [ngClass]="{ 'is-invalid': submitted && f['email'].errors }"
+  />
+  @if (submitted && f['email'].errors) {
+    <span class="form__errors">
+      @if (f['email'].errors['required']) { Email is required }
+      @if (f['email'].errors['email']) { Email is invalid }
+    </span>
+  }
+  <input
+    type="password"
+    placeholder="password"
+    formControlName="password"
+    class="form__input"
+    [ngClass]="{ 'is-invalid': submitted && f['password'].errors }"
+  />
+  @if (submitted && f['password'].errors) {
+    <span class="form__errors">
+      @if (f['password'].errors['required']) { Password is required }
+      @if (f['password'].errors['minlength']) { Password must be at least 6 characters} 
+      @if (f['password'].errors['maxlength']) { Username must not exceed 40 characters }
+    </span>
+  }
+  <button type="submit" class="form__button">login</button>
+</form>

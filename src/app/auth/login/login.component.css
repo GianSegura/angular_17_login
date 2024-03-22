@@ -1,0 +1,47 @@
+.form {
+  background: #ffffff;
+  width: 270px;
+  margin: 100px auto 0;
+  padding: 45px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.form__input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 15px 0 0;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.form__button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #4caf50;
+  width: 100%;
+  border: 0;
+  margin-top: 30px;
+  padding: 15px;
+  color: #ffffff;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+
+.form__button:hover,
+.form__button:active,
+.form__button:focus {
+  background: #43a047;
+}
+
+.form__errors {
+  margin: 5px 0;
+  font-size: 12px;
+  color: red;
+}

@@ -1,0 +1,8 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+body {
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(to left, #76b852, #8dc26f);
+  margin: 0 auto;
+}
